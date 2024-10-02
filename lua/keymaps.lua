@@ -52,3 +52,17 @@ vim.keymap.set('n', '<C-n>', '<Cmd>Neotree toggle<CR>')
 
 -- Backspace
 vim.keymap.set('i', '<C-BS>', '<C-w>', { desc = 'Map CTRL+Backspace to default vim delete word' })
+
+-- Showing diagnostic messages wrapped
+-- vim.keymap.set(
+
+--   'n', -- Normal mode
+
+--   '<leader>dd', -- Key combination
+
+--   '<cmd>lua vim.diagnostic.open_float()<CR>', -- Command to run
+
+--   { noremap = true, silent = true, desc = 'Toggles local troubleshoot' } -- Options: No remap, silent, description
+
+-- )
+vim.keymap.set('n', '<leader>dd', vim.diagnostic.open_float, { noremap = true, silent = true, desc = 'Toggles local troubleshoot' })
