@@ -83,18 +83,14 @@ local configs = {
   powershell_es = {
     bundle_path = require('mason-core.path').package_prefix 'powershell-editor-services',
   },
-  pyright = {
-    settings = {
-      python = {
-        analysis = {
-          -- venvPath = '/home/matp/.cache/pypoetry/virtualenvs',
-          autoSearchPaths = true,
-          useLibraryCodeForTypes = true,
-          autoImportCompletions = true,
-          diagnosticMode = 'openFilesOnly',
-          extraPaths = {},
-        },
-      },
+  basedpyright = {
+    analysis = {
+      -- venvPath = '/home/matp/.cache/pypoetry/virtualenvs',
+      autoSearchPaths = true,
+      useLibraryCodeForTypes = true,
+      autoImportCompletions = true,
+      diagnosticMode = 'openFilesOnly',
+      extraPaths = {},
     },
   },
   tailwindcss = {

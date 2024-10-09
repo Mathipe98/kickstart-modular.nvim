@@ -88,4 +88,7 @@ vim.diagnostic.config {
   -- },
 }
 
--- vim.lsp.inlay_hint.enable(true)
+vim.lsp.inlay_hint.enable(true)
+vim.diagnostic.config {
+  update_in_insert = true,
+}
