@@ -22,7 +22,9 @@ o.expandtab = true
 o.smartindent = true
 o.autoindent = true
 
-o.wrap = false
+o.wrap = true
+o.breakindent = true
+o.linebreak = true
 
 o.swapfile = false
 o.undofile = true

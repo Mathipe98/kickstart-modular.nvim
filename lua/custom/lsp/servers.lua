@@ -91,6 +91,7 @@ local configs = {
       autoImportCompletions = true,
       diagnosticMode = 'openFilesOnly',
       extraPaths = {},
+      updateImportsOnFileMove = true,
     },
   },
   tailwindcss = {
